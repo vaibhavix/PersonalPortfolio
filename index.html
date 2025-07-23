@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img
+                src="./resources/logo.jpg"
+                alt="Vaibhavi Kapadia Logo"
+                class="logo-img"
+            />
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <img
+                src="./resources/logo.jpg"
+                alt="Vaibhavi Kapadia Logo"
+                class="logo-img"
+            />
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./resources/profile-pic.png" alt="Vaibhavi Kapadia profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am</p>
+            <h1 class="title">Vaibhavi Kapadia</h1>
+            <p class="section__text__p2">a Software Engineering Student <br /> at University of the South Pacific<br />Fiji!</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./resources/Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./resources/linkedin.png" 
+                alt="My LinkedIn Profile" 
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/vaibhavi-kapadia-849717333/'" />
+                <img 
+                src="./resources/github.png" 
+                alt="My GitHub Profile" 
+                class="icon" 
+                onclick="location.href='https://github.com/vaibhavix'" />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img
+                    src="./resources/about-pic.png"
+                    alt="Profile picture"
+                    class="about-pic"
+                />
+            </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img
+                        src="./resources/experience.png"
+                        alt="Experience icon"
+                        class="icon"
+                    />
+                    <h3>Work Experience</h3>
+                    <p>Currently 5+ months into<br />as a Software & Web Developer intern<br />at Packleader BPO</p>
+                </div>
+                <div class="details-container">
+                    <img
+                        src="./resources/education.png"
+                        alt="Education icon"
+                        class="icon"
+                    />
+                    <h3>Education</h3>
+                    <p>Currently Third Year into Bachelors of Software Engineering</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    I'm a third-year Software Engineering student at the University of the South Pacific, currently gaining hands-on 
+                    experience as a Software and Web Development Intern at Packleader Pacific. I’ve worked on projects like a Student Dashboard Management 
+                    System and a Clinic Booking System, which have strengthened both my technical skills — in Python, Java, C++, SQL,  <a href="#experience">see more.</a> — and my 
+                    ability to build real solutions that matter. What I love most about this field is the unique blend of creativity, problem-solving, 
+                    and continuous learning it offers. For me, turning ideas into working systems isn’t just rewarding — it’s exciting. I'm working 
+                    toward becoming a full-stack developer, and along the way, I’ve built a reputation for being dependable, self-aware, and a team 
+                    player with a strong work ethic. Outside the screen, I enjoy reading, cooking, and staying active through netball, futsal, and 
+                    badminton. I try to live by the idea that 
+                        <quote>
+                            <strong><em>“It is only when we take chances that our lives improve”</em></strong>
+                            <cite>Walter Anderson</cite>
+                        </quote> 
+                    . A quote that reminds me 
+                    to stay honest, curious, and courageous in everything I do.
+                </p>
+            </div>
+        </div>
+      </div>
+      <img
+        src="./resources/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experiences</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Bootstrap</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Django</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>C++</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>ASP.NET</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Low-Level Programming & OS</h2>
+                    <div class="article-container">
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Machine Lanuage</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Assembly Language</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img
+                                src="./resources/checkmark.png"
+                                alt="Experience icon"
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Oracle VirtualBox</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <img
+        src="./resources/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+    />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse Few Of My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./resources/project-1.png"
+                            alt="Project 1"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One<br />Clinic Booking System</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vaibhavix/IS221_A2.git'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vaibhavix/IS221_A2.git'">
+                            Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img
+                            src="./resources/project-2.png"
+                            alt="Project 2"
+                            class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two<br />Student Dashboard Management System</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vaibhavix/IS221_A2.git'">
+                            Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/vaibhavix/IS221_A2.git'">
+                            Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <img
+        src="./resources/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+    />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                    src="./resources/email.png"
+                    alt="Email icon"
+                    class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:vkapadia111@gmail.com">vkapadia111@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                    src="./resources/linkedin.png"
+                    alt="LinkedIn icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com/in/vaibhavi-kapadia-849717333">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Vaibhavi Kapadia. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
