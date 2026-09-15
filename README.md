@@ -1,2 +1,2 @@
 Link to live site:
-https://glittery-tarsier-29bbaa.netlify.app/
+https://vaibhavix.github.io/PersonalPortfolio/
